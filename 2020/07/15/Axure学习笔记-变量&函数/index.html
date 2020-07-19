@@ -20,13 +20,13 @@
 <meta property="og:description" content="全局变量中继器&#x2F;数据集元件页面窗口鼠标指针数字字符串 length用途：获取字符串对象的字符长度，每个汉字长度按1计算用法：[[字符串对象.length]]例一：通过局部变量获取元件文字后，通过[[n.length]]获取的字符长度例二：通过[[this.text.length]]即可实现对当前元件文字的字符长度获取（部分元件有效）    charAt(index)用途：获取字符串对象中索引位置的">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-15T12:27:38.000Z">
-<meta property="article:modified_time" content="2020-07-19T08:26:29.177Z">
+<meta property="article:modified_time" content="2020-07-19T08:45:37.713Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Axure">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1595147220324">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1595148527543">-->
 <meta name="generator" content="Hexo 4.2.1"></head>
 
 <body class="mdui-drawer-body-left">
@@ -175,14 +175,34 @@
 <li><strong>【%】</strong> 取余运算</li>
 </ul>
 <h2 id="日期"><a href="#日期" class="headerlink" title="日期"></a>日期</h2><ul>
-<li><strong>【getDate()】</strong> 从Date对象返回一个月中的某一天（1～31）</li>
-<li><strong>【getMonth()】</strong> 从Date对象返回月份（1～12）</li>
-<li><strong>【getFullYear()】</strong> 从Date对象以四位数字返回年份</li>
-<li><strong>【getHours()】</strong> 返回Date对象的小时（0～23）</li>
-<li><strong>【getMinutes()】</strong> 返回Date对象的分钟（0～59）</li>
-<li><strong>【getSeconds()】</strong> 返回Date对象的秒数（0～59）</li>
+<li><strong>getDate()</strong><br>从Date对象返回一个月中的某一天（1～31）</li>
 </ul>
-<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><p><strong>案例1：</strong> 获取系统当前日期，格式为：yyy-MM-dd<br><code>[[Now.getFullYear()]]-[[Now.getMonth()]]-[[Now.getDate]]</code><br><strong>案例2：</strong> 获取系统当前日期，格式为：yyy/MM/dd<br><code>[[Now.getFullYear()]]/[[Now.getMonth()]]/[[Now.getDate]]</code><br><strong>案例3：</strong> 获取系统当前时间，格式为：HH:mm:ss<br><code>[[Now.getHours()]]:[[Now.getMinutes()]]:[[Now.getSeconds]]</code></p>
+<hr>
+<ul>
+<li><strong>【getMonth()】</strong><br>从Date对象返回月份（1～12）</li>
+</ul>
+<hr>
+<ul>
+<li><strong>【getFullYear()】</strong><br>从Date对象以四位数字返回年份</li>
+</ul>
+<hr>
+<ul>
+<li><strong>【getHours()】</strong><br>返回Date对象的小时（0～23）</li>
+</ul>
+<hr>
+<ul>
+<li><strong>【getMinutes()】</strong><br>返回Date对象的分钟（0～59）</li>
+</ul>
+<hr>
+<ul>
+<li><strong>【getSeconds()】</strong><br>返回Date对象的秒数（0～59）</li>
+</ul>
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><p><strong>案例1：</strong> 获取系统当前日期，格式为：yyy-MM-dd<br><code>[[Now.getFullYear()]]-[[Now.getMonth()]]-[[Now.getDate]]</code></p>
+<hr>
+<p><strong>案例2：</strong> 获取系统当前日期，格式为：yyy/MM/dd<br><code>[[Now.getFullYear()]]/[[Now.getMonth()]]/[[Now.getDate]]</code></p>
+<hr>
+<p><strong>案例3：</strong> 获取系统当前时间，格式为：HH:mm:ss<br><code>[[Now.getHours()]]:[[Now.getMinutes()]]:[[Now.getSeconds]]</code></p>
+<hr>
 <h2 id="布尔"><a href="#布尔" class="headerlink" title="布尔"></a>布尔</h2><ul>
 <li><strong>【==】</strong> 等于</li>
 <li><strong>【!=】</strong> 不等于</li>
@@ -243,7 +263,7 @@
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
 
 
-<script src="/js/app.js?v=1595147220325"></script>
+<script src="/js/app.js?v=1595148527545"></script>
   
 
 
