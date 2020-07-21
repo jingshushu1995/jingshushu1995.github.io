@@ -2,9 +2,9 @@
 title: Axure学习笔记-变量&函数
 date: 2020-07-15 20:27:38
 tags: Axure
-cover: https://img.zcool.cn/community/01a6295f0ec2a8a801206621e997c6.jpg@1280w_1l_2o_100sh.jpg
-coverWidth: 1280
-coverHeight: 547
+cover: https://s1.ax1x.com/2020/07/19/URxfe0.png
+coverWidth: 498
+coverHeight: 282
 ---
 
 ## 全局变量
@@ -25,39 +25,41 @@ coverHeight: 547
 
 ## 字符串
 
+* **length** 
+  用途：获取字符串对象的字符长度，每个汉字长度按1计算
+  用法：[[字符串对象.length]]
+  例一：通过局部变量<n>获取元件文字后，通过[[n.length]]获取<n>的字符长度
+  例二：通过[[this.text.length]]即可实现对当前元件文字的字符长度获取（部分元件有效）
+
+***
+
+* **charAt(index)** 
+  用途：获取字符串对象中索引位置的字符
+  参数：大于等于0的整数
+  用法：字符串对象.charAt(索引位置)
+  示例：设置变量n的值为“ABCDE”，则[[n.charAt(0)]]的返回值为“A”，[[n.charAt(3)]]的返回值为“D”
+
+***
+
+* **concat('string')** 
+  用途：将字符串对象与另一个字符串连接
+  参数：字符串（左右必须添加半角单引号）
+  用法：字符串对象.concat('字符串')  
+  示例：设置变量n的值为“ABC”，则[[n.concat('DE')]]的返回值为“ABCDE”
+
+***
+
+* **indexOf(‘searchValue’)** 
+  用途：获取查询字符串在目标字符串中首次出现的位置（左至右），若未查询到返回值为-1
+  参数：字符串（左右必须添加半角单引号）
+  隐藏参数：起始索引位置
+  用法：字符串对象.indexOf('字符串'，<起始索引位置>)  
+  示例：设置变量n的值为“ABCDE”，则[[n.indexOf('C')]]的返回值为2，[[str.indexOf('E',3)]]的返回值为4
+
+
+***
+
 ## 数学
-
-## 日期
-
-* **【getDate()】** 从Date对象返回一个月中的某一天（1～31）
-* **【getMonth()】** 从Date对象返回月份（1～12）
-* **【getFullYear()】** 从Date对象以四位数字返回年份
-* **【getHours()】** 返回Date对象的小时（0～23）
-* **【getMinutes()】** 返回Date对象的分钟（0～59）
-* **【getSeconds()】** 返回Date对象的秒数（0～59）
-
-### 案例
-
-**案例1：** 获取系统当前日期，格式为：yyy-MM-dd
-`
-[[Now.getFullYear()]]-[[Now.getMonth()]]-[[Now.getDate]] 
-`
-**案例2：** 获取系统当前日期，格式为：yyy/MM/dd
-`
-[[Now.getFullYear()]]/[[Now.getMonth()]]/[[Now.getDate]] 
-`
-**案例3：** 获取系统当前时间，格式为：HH:mm:ss
-`
-[[Now.getHours()]]:[[Now.getMinutes()]]:[[Now.getSeconds]] 
-`
-
-## 布尔
-
-### 赋值运算符
-
-* **【=】** 等于
-
-### 算术运算符
 
 * **【+】** 加法运算
 * **【-】** 减法运算
@@ -65,14 +67,66 @@ coverHeight: 547
 * **【/】** 除法运算
 * **【%】** 取余运算
 
-### 关于运算符
+## 日期
+
+* **getDate()** 
+  从Date对象返回一个月中的某一天（1～31）
+
+***
+
+* **【getMonth()】** 
+  从Date对象返回月份（1～12）
+
+***
+
+* **【getFullYear()】** 
+  从Date对象以四位数字返回年份
+
+***
+
+* **【getHours()】** 
+  返回Date对象的小时（0～23）
+
+***
+
+* **【getMinutes()】** 
+  返回Date对象的分钟（0～59）
+
+***
+
+* **【getSeconds()】** 
+  返回Date对象的秒数（0～59）
+
+### 案例
+
+**案例1：** 获取系统当前日期，格式为：yyy-MM-dd
+`
+[[Now.getFullYear()]]-[[Now.getMonth()]]-[[Now.getDate]] 
+`
+
+***
+
+**案例2：** 获取系统当前日期，格式为：yyy/MM/dd
+`
+[[Now.getFullYear()]]/[[Now.getMonth()]]/[[Now.getDate]] 
+`
+
+***
+
+**案例3：** 获取系统当前时间，格式为：HH:mm:ss
+`
+[[Now.getHours()]]:[[Now.getMinutes()]]:[[Now.getSeconds]] 
+`
+
+***
+
+## 布尔
 
 * **【==】** 等于
 * **【!=】** 不等于
-* **【>】** 大于
 * **【<】** 小于
-* **【>=】** 大于等于
 * **【<=】** 小于等于
+* **【>】** 大于
+* **【>=】** 大于等于
 * **【&&】** 并且
 * **【||】** 或者
-* **【!】** 非
